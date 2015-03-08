@@ -28,10 +28,13 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<!-- Menu-->
+		<link rel="script" href="lib/js/menu.js">
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
 	</head>
 
 	<body>
@@ -39,44 +42,82 @@
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
+
+			<!-- Vertical slides -->
 			<div class="slides">
-				<section data-background="imgs/paperback.jpg">
-					<h1>The Paper Brain</h1>
-					<h3>Clean ass development for your website and brand</h3>
-				</section>
+			<section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					<section data-background="imgs/paperback_octo.jpg">
+						<div class="titlePage">
+						<h1>The Paper Brain</h1>
+						<h4>Clean ass development for your website and brand</h4>
+						</div>
 					</section>
-					<section>
-						<h2>Basement Level 1</h2>
+					<section data-background="imgs/paperback.jpg">
+						<h1>Services</h1>
+						<p>
+		<ul class="servicesLeft">
+	                <li><h4>Web</h4></li>
+			                    <ul>
+			                        <li>HTML5</li>
+			                        <li>CSS3</li>
+			                        <li>Javascript</li>
+			                        <li>Animations</li>
+			                        <li>Mobile Development</li>
+			                    </ul>
+
+	                <li><h4>Content Creation</h4></li>
+			                    <ul>
+			                        <li>Video</li>
+			                        <li>Motion Design</li>
+			                        <li>Photography</li>
+			                        <li>Graphic Design</li>
+			                        <li>Content Writing</li>
+			                    </ul>
+			        <li><h4>BackEnd Development</h4></li>
+			                    <ul>
+			                        <li>Hosting</li>
+			                        <li>Databases</li>
+			                        <li>Content Delivery Networks</li>
+			                    </ul>
+        </ul>
+        <ul class="servicesRight">       			
+
+                	<li><h4>Brand</h4></li>
+
+                				<ul>
+			                        <li>Hosting</li>
+			                        <li>Databases</li>
+			                        <li>Content Delivery Networks</li>
+			                    </ul>
+                		
+                	<li><h4>Online Marketing</h4></li>
+            					<ul>
+            						<li>SEO</li>
+            						<li>PPC</li>
+            						<li>Social Media</li>
+            						<li>Content Creation</li>
+            						<li>Email Marketing</li>
+            						<li>Auto Responders</li>
+            						<li>Consultations</li>
+        						</ul>         
+        </ul>
+
+						</p>
+					</section>
+					<section data-background="imgs/paperback_octo.jpg">
+						<h1>About</h1>
 						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
 					</section>
-					<section>
-						<h2>Basement Level 2</h2>
+					<section data-background="imgs/paperback.jpg">
+						<h1>Contact</h1>
 						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<br>						
 					</section>
-				</section>
 
+
+			</section>
+			<!-- END Vertical slides -->
 				<section>
 					<h2>Slides</h2>
 					<p>

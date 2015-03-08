@@ -871,10 +871,7 @@ body {
  *********************************************/
 .reveal.rtl .slides, .reveal.rtl .slides h1, .reveal.rtl .slides h2, .reveal.rtl .slides h3, .reveal.rtl .slides h4, .reveal.rtl .slides h5, .reveal.rtl .slides h6 {
   direction: rtl;
-  font-family: 'biko' sans-serif;
-  src: url('assets/fonts/Biko_Bold.otf'); 
-  src: url('assets/fonts/Biko_Regular.otf');
-   }
+  font-family: sans-serif; }
 
 .reveal.rtl pre, .reveal.rtl code {
   direction: ltr; }

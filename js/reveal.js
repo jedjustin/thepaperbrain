@@ -52,10 +52,10 @@
 			progress: true,
 
 			// Display the page number of the current slide
-			slideNumber: false,
+			slideNumber: true,
 
 			// Push each slide change to the browser history
-			history: false,
+			history: true,
 
 			// Enable keyboard shortcuts for navigation
 			keyboard: true,
@@ -73,7 +73,7 @@
 			touch: true,
 
 			// Loop the presentation
-			loop: false,
+			loop: true,
 
 			// Change the presentation direction to be RTL
 			rtl: false,
@@ -101,16 +101,16 @@
 			autoSlideStoppable: true,
 
 			// Enable slide navigation via mouse wheel
-			mouseWheel: false,
+			mouseWheel: true,
 
 			// Apply a 3D roll to links on hover
-			rollingLinks: false,
+			rollingLinks: true,
 
 			// Hides the address bar on mobile devices
 			hideAddressBar: true,
 
 			// Opens links in an iframe preview overlay
-			previewLinks: false,
+			previewLinks: true,
 
 			// Exposes the reveal.js API through window.postMessage
 			postMessage: true,
@@ -122,10 +122,10 @@
 			focusBodyOnPageVisibilityChange: true,
 
 			// Transition style
-			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			transition: 'convex', // none/fade/slide/convex/concave/zoom
 
 			// Transition speed
-			transitionSpeed: 'default', // default/fast/slow
+			transitionSpeed: 'slow', // default/fast/slow
 
 			// Transition style for full page slide backgrounds
 			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
@@ -2654,8 +2654,8 @@
 		var routes = {
 			left: indexh > 0 || config.loop,
 			right: indexh < horizontalSlides.length - 1 || config.loop,
-			up: indexv > 0,
-			down: indexv < verticalSlides.length - 1
+			up: indexv > 0 || config.loop,
+			down: indexv < verticalSlides.length - 1 || config.loop
 		};
 
 		// reverse horizontal controls for rtl
