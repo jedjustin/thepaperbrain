@@ -52,7 +52,7 @@
 			progress: true,
 
 			// Display the page number of the current slide
-			slideNumber: true,
+			slideNumber: false,
 
 			// Push each slide change to the browser history
 			history: true,
@@ -122,7 +122,7 @@
 			focusBodyOnPageVisibilityChange: true,
 
 			// Transition style
-			transition: 'convex', // none/fade/slide/convex/concave/zoom
+			transition: 'fade', // none/fade/slide/convex/concave/zoom
 
 			// Transition speed
 			transitionSpeed: 'slow', // default/fast/slow

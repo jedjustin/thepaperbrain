@@ -16,7 +16,7 @@ body {
   background-color: #222; }
 
 .reveal {
-  font-family: biko, 'Source Sans Pro', Helvetica, sans-serif;
+  font-family: 'biko', 'Source Sans Pro', Helvetica, sans-serif;
   font-size: 38px;
   font-weight: normal;
   color: #000; }
@@ -37,7 +37,7 @@ body {
   margin: 0 0 0px 0;
   color: #000;
   font-family: biko, 'Source Sans Pro', Helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: normal;
@@ -220,28 +220,28 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
-  border-right-color: #42affa; }
+  border-right-color: #000; }
 
 .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
-  border-left-color: #42affa; }
+  border-left-color: #000; }
 
 .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #42affa; }
+  border-bottom-color: #000; }
 
 .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-  border-top-color: #42affa; }
+  border-top-color: #000; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #8dcffc; }
+  border-right-color: red; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #8dcffc; }
+  border-left-color: red; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #8dcffc; }
+  border-bottom-color: red; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #8dcffc; }
+  border-top-color: red; }
 
 /*********************************************
  * PROGRESS BAR
@@ -260,6 +260,7 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #42affa; }
+  
 /*********************************************
  * services list
  *********************************************/
@@ -278,6 +279,24 @@ li{font-size: 20px;
  *********************************************/
 
 .titlePage h1
-{margin-top:-299px;
+{margin-top:-315px;
 
+}
+
+/*********************************************
+ * triangle bullets
+ *********************************************/
+
+
+li:before { 
+    content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
 }
