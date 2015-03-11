@@ -122,7 +122,7 @@
 			focusBodyOnPageVisibilityChange: true,
 
 			// Transition style
-			transition: 'fade', // none/fade/slide/convex/concave/zoom
+			transition: 'concave', // none/fade/slide/convex/concave/zoom
 
 			// Transition speed
 			transitionSpeed: 'slow', // default/fast/slow
@@ -2654,8 +2654,8 @@
 		var routes = {
 			left: indexh > 0 || config.loop,
 			right: indexh < horizontalSlides.length - 1 || config.loop,
-			up: indexv > 0 || config.loop,
-			down: indexv < verticalSlides.length - 1 || config.loop
+			up: indexv > 0,
+			down: indexv < verticalSlides.length - 1
 		};
 
 		// reverse horizontal controls for rtl
